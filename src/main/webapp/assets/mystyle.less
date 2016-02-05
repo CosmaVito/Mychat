@@ -1,0 +1,76 @@
+@style: 0 0 5px 0 rgba(69, 155, 231, .75);
+
+html { 
+  background: url(http://i.imgur.com/leqeg50.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 50%;
+  border: solid 1px #D4D4D1;
+  border-radius: 8px;
+  transition: .7s;
+  font-size: 1.1em;
+  margin: 0.2em 0;
+  
+  &:focus {
+  -webkit-box-shadow: @style;
+  -moz-box-shadow: @style;
+  box-shadow: @style;
+  border-color: #459be7;
+  outline: none;
+  }
+}
+
+button {
+  background: #459be7;
+  color: #FFF;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: .3em 1.9em;
+  border: none;
+  font-size: 1.2em;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: .7s;
+  
+  &:focus {
+  outline: none;
+  }
+  
+  &:hover {
+  background: #1c82dd;
+  }
+  
+  &:disabled {
+  background-color: #90BFE8;
+  cursor: not-allowed;
+  }
+}
+
+ .show {
+    width: 50%;
+    border: solid 2px #c0c0c0;
+    border-radius: 8px;
+    height:600px;
+    overflow:auto;
+    float: left;
+}
+
+ .showtwo {
+    width: 10%;
+    border: solid 2px #c0c0c0;
+    border-radius: 8px;
+    height:600px;
+    overflow:auto;
+    float: left;
+}
